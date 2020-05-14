@@ -1,7 +1,7 @@
 {
-  "name": "hylia",
+  "name": "Martín Eizayaga's Personal Website",
   "version": "0.7.0",
-  "description": "A simple Eleventy starter kit to help you have a blog of your own",
+  "description": "Martín Eizayaga's Personal Website",
   "main": "index.js",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
