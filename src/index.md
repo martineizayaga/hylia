@@ -8,4 +8,4 @@ metaDesc: "A bunch of my projects and writings."
 socialImage: ''
 ---
 
-I'm a UI engineer at [IBM](https://ibm.com). Here are a bunch of my [Projects](/projects) and [Writings](/writings).
+I'm a UI engineer at [IBM](https://ibm.com). Here are a bunch of my [Projects](/projects) and [Writings](/archive).
