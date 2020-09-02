@@ -8,7 +8,7 @@ tags:
 ---
 ## Background
 
-Recently, I was on Dribble and I found [this design](https://dribbble.com/shots/11303806-Figma-Smart-Animated-Gameboy) by [Rogie](https://dribbble.com/rogie). I had read somewhere on the web that implementing designs from Dribble was a good way to sharpen CSS skills. So I figured, why not, I would have at it.
+Recently I was on Dribble and I found [this design](https://dribbble.com/shots/11303806-Figma-Smart-Animated-Gameboy) by [Rogie](https://dribbble.com/rogie). I had read somewhere on the web that implementing designs from Dribble was a good way to sharpen CSS skills. So I figured, why not, I would have at it.
 
 ## Finished Product
 <video autoplay loop muted controls controlslist="nodownload nofullscreen noremoteplayback" preload="auto" style="border: 1px solid black">
@@ -28,7 +28,7 @@ Recently, I was on Dribble and I found [this design](https://dribbble.com/shots/
 I thought that this was going to be very straightforward, but I was surprised at the number of challenges that came my way and how much I would learn.
 
 ### Stacked Box Shadows
-The first challenge was trying to replicate the shadow. Initially it wasn't a challenge at all because of [Sara L. Fossheim's blog post on box-shadows](https://fossheim.io/writing/posts/css-box-shadow-animation/). I had no idea that one could stack several box-shadows. Here's what I had.
+The first challenge was trying to replicate the shadow. It wasn't a challenge at all because of [Sara L. Fossheim's blog post on box-shadows](https://fossheim.io/writing/posts/css-box-shadow-animation/). I had no idea that one could stack several box-shadows.
 ```css
 #gameboy {
   box-shadow:
