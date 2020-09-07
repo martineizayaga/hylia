@@ -11,12 +11,14 @@ tags:
 Recently I was on Dribble and I found [this design](https://dribbble.com/shots/11303806-Figma-Smart-Animated-Gameboy) by [Rogie](https://dribbble.com/rogie). I had read somewhere on the web that implementing designs from Dribble was a good way to sharpen CSS skills. So I figured, why not, I would have at it.
 
 ## Finished Product
+### Video
 <video autoplay loop muted controls controlslist="nodownload nofullscreen noremoteplayback" preload="auto" style="border: 1px solid black">
   <source src="/videos/gameboy-demo.mp4" type="video/mp4">
   <source src="/videos/gameboy-demo.webm" type="video/webm">
   Your browser doesn't support the HTML5 video tag :(
 </video>
 
+### Demo
 <p class="codepen" data-height="550" data-theme-id="light" data-default-tab="result" data-user="martineizayaga" data-slug-hash="gOaeOgK" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Gameboi">
   <span>See the Pen <a href="https://codepen.io/martineizayaga/pen/gOaeOgK">
   Gameboi</a> by Martín E (<a href="https://codepen.io/martineizayaga">@martineizayaga</a>)
