@@ -16,6 +16,11 @@
       "external": false
     },
     {
+      "text": "Social",
+      "url": "https://social.martineizayaga.com",
+      "external": true
+    },
+    {
       "text": "Contact",
       "url": "/contact",
       "external": false
