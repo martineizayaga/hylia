@@ -141,4 +141,4 @@ input[type=range]::-webkit-slider-thumb {
 - Browsers have different pseudo selectors for input sliders and thumbs.
 - WebKit input sliders won't show styling if it has `orientation="vertical"`. You should probably rotate the slider instead.
 - `border-radius` can have more than one value and has a handy shorthand.
-- Implementing designs from Dribble is kinda fun :).
+- Implementing designs from Dribble is kinda fun. :)
