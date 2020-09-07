@@ -1,6 +1,6 @@
 ---
 title: 'Game Boy Implementation'
-date: '2020-05-15'
+date: '2020-09-07'
 tags:
   - CSS
   - TIL
@@ -11,12 +11,14 @@ tags:
 Recently I was on Dribble and I found [this design](https://dribbble.com/shots/11303806-Figma-Smart-Animated-Gameboy) by [Rogie](https://dribbble.com/rogie). I had read somewhere on the web that implementing designs from Dribble was a good way to sharpen CSS skills. So I figured, why not, I would have at it.
 
 ## Finished Product
+### Video
 <video autoplay loop muted controls controlslist="nodownload nofullscreen noremoteplayback" preload="auto" style="border: 1px solid black">
   <source src="/videos/gameboy-demo.mp4" type="video/mp4">
   <source src="/videos/gameboy-demo.webm" type="video/webm">
   Your browser doesn't support the HTML5 video tag :(
 </video>
 
+### Demo
 <p class="codepen" data-height="550" data-theme-id="light" data-default-tab="result" data-user="martineizayaga" data-slug-hash="gOaeOgK" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Gameboi">
   <span>See the Pen <a href="https://codepen.io/martineizayaga/pen/gOaeOgK">
   Gameboi</a> by Martín E (<a href="https://codepen.io/martineizayaga">@martineizayaga</a>)
@@ -57,7 +59,7 @@ The box-shadows for the other parts of the Game Boy (like the buttons) were mani
 ### The Inner Face Illusion
 One of the disadvantages of using `box-shadow` was that I could not figure out a way to have the face be a part of the shadow (if you know, let me know pls!) So, I had to figure out how to give the *illusion* of there being a box cutout where the screen is.
 
-I started by making a black `div` with the face on it, but the it covered the outer screen's bottom right border radius. After much Googling, I [found out](https://stackoverflow.com/a/11725743) about `display: hidden`. It's when the overflow content is clipped.
+I started by making a black `div` with the face on it, but then it covered the outer screen's bottom right border radius. After much Googling, I [found out](https://stackoverflow.com/a/11725743) about `overflow: hidden`. This attribute value clips the overflow content, making it invisible.
 
 In order to have it shift left and right with the horizontal slider, I added a line to the `changeShadow` function.
 
@@ -103,9 +105,9 @@ border-bottom-left-radius: 50% 70%;
 ```
 
 ### Styling the Sliders
-The last big challenge of this implementation was prettying up the sliders. The style that [Rogie](https://dribbble.com/rogie) chose was similar to the shadow of the Game Boy, so I couldn't just leave the default sliding styles. Little did I know of how picky each browser woudl be with slider styles. I found a great [CSS-Tricks article](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/) that really helped me out.
+The last big challenge of this implementation was prettying up the sliders. The style that [Rogie](https://dribbble.com/rogie) chose was similar to the shadow of the Game Boy, so I couldn't just leave the default sliding styles. Little did I know of how picky each browser would be with slider styles. I found a great [CSS-Tricks article](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/) that really helped me out.
 
-Safari and Firefox have their own CSS selectors for the track (the sliding track) and the thumb (what you click to drag to a value.) There's not much more than I can say than to recommend the [CSS-Tricks article](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/).
+Safari and Firefox have their own CSS selectors for the track (the sliding track) and the thumb (what you click to drag to a value.) There's not much more than I can say except to recommend the [CSS-Tricks article](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/).
 
 I did however find out that an `<input>` with `type="range"` and `orient="vertical"` won't have css styles in Webkit (Chrome, Safari, Opera.) So I had to rotate the input instead. I was kind of sad about that though. I like adding new HTML attributes if they're helpful :(.
 
@@ -139,4 +141,4 @@ input[type=range]::-webkit-slider-thumb {
 - Browsers have different pseudo selectors for input sliders and thumbs.
 - WebKit input sliders won't show styling if it has `orientation="vertical"`. You should probably rotate the slider instead.
 - `border-radius` can have more than one value and has a handy shorthand.
-- Implementing designs from Dribble is kinda fun :).
+- Implementing designs from Dribble is kinda fun. :)
